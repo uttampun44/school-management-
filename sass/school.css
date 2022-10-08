@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat+Alternates&family=Mulish:wght@700&family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+  --primary-color: #fff;
+  --secondary-color: cadetblue;
+  --font-family: "Roboto", sans-serif;
+  --font-weight-medium: 400;
+  --font-weight-semi-bold: 700;
+  --font-weight-bold: 900;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: var(--font-family);
+  text-align: center;
+  position: relative;
+  top: 3rem;
+}
+
+.school-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 31.5rem;
+}
+
+form {
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.student-info-one {
+  line-height: 2;
+  text-align: end;
+}
+.student-info-one label {
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-semi-bold);
+}
+.student-info-one input {
+  margin-left: 2rem;
+}
+.student-info-one #one {
+  height: 2.3rem;
+  width: 10rem;
+}
+.student-info-one #add {
+  background: green;
+  color: white;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+  font-size: 1.2rem;
+  width: 30%;
+  padding: 0.3rem;
+  margin-top: 3rem;
+}
+
+.student-info-two {
+  line-height: 2;
+  text-align: end;
+}
+.student-info-two label {
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-semi-bold);
+}
+.student-info-two input {
+  margin-left: 2rem;
+}
+.student-info-two #second {
+  height: 2.3rem;
+  width: 10rem;
+}
+.student-info-two #class {
+  padding-right: 2rem;
+}
+
+.table-section table {
+  margin: auto;
+}
+.table-section table, .table-section th {
+  border: 1px solid black;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  padding: 1rem;
+}
+.table-section table, .table-section td {
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  padding: 1rem;
+}
+.table-section #update {
+  margin: auto;
+  text-decoration: none;
+  background: green;
+  color: white;
+  padding: 0.5rem;
+}
+.table-section #delete {
+  margin: auto;
+  text-decoration: none;
+  background: blue;
+  color: white;
+  padding: 0.5rem;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  form {
+    display: grid;
+    align-items: center;
+  }
+  .student-info-one input {
+    margin-left: 3rem;
+    margin-top: 2rem;
+  }
+  .student-info-one .student-info-two input {
+    margin-left: 3rem;
+    margin-top: 2rem;
+  }
+}/*# sourceMappingURL=school.css.map */
